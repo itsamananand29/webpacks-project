@@ -1,11 +1,10 @@
 {
   "name": "JsObjects",
-  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start":"webpack"
+    "start": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
