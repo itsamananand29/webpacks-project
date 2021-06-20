@@ -1,6 +1,6 @@
-import { showPannel} from '../utils/showPanel.js';
-import {clearAns} from '../utils/clearAnswer.js';
-import {data} from '../utils/res.js';
+import { showPannel} from './js/utils/showPanel.js';
+import {clearAns} from './js/utils/clearAnswer.js';
+import {data} from './js/utils/res.js';
 const table = JSON.parse(JSON.stringify(data));
 const ques = table.questions.map(ques=>ques);
 const ans = table.answers.map(ans=>ans);
