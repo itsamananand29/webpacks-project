@@ -1,7 +1,7 @@
 import { showPannel} from './js/utils/showPanel.js';
 import {clearAns} from './js/utils/clearAnswer.js';
 import {data} from './js/utils/res.js';
-import './css/app.css';
+import './scss/app.scss';
 const table = JSON.parse(JSON.stringify(data));
 const ques = table.questions.map(ques=>ques);
 const ans = table.answers.map(ans=>ans);
