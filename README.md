@@ -43,3 +43,9 @@ We need to give a path and a rule for the images files to be handled
 
 When do the cache busting the problem is that each time anything is changed inside the code a new file is created . But the 
 old file is not deleted . To clear the old files we use clean-webpack-plugin. 
+
+To include the libraries which are less likely to change inside our main.js file which is more likely to change.
+So we can create a vendor.js file and include all the libraries inside that file and then add that file as an entry file.
+
+Performance wise loading our css by injecting them into the dom is not very good. Especially in dom. 
+We extract css . We can use mini-css-extract-plugin. For this to work we have to remove css-loader , style-loader and sass-loader.
