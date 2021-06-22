@@ -1,4 +1,4 @@
-import { showPannel} from './js/utils/showPanel.js';
+import {showPannel} from './js/utils/showPanel.js';
 import {clearAns} from './js/utils/clearAnswer.js';
 import {data} from './js/utils/res.js';
 import './scss/app.scss';
@@ -47,6 +47,7 @@ nextBtn.addEventListener('click',()=>{
     }
     showPannel(ques,ans,current_ques,totalQues,output);
 })
+
 submitBtn.addEventListener('click',()=>{
     document.getElementById('test').style.display="none";
     document.getElementById('submit-section').style.display="block";

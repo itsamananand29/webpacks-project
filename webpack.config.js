@@ -1,12 +1,17 @@
-const { NONAME } = require('dns');
-const path = require('path');
+const path = require('path'); 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports={
     entry:"./src/app.js",
     mode:"development",
     output:{
-        filename:"app.js",
+        filename:"app.[contenthash].js",
         path:path.resolve(__dirname,"javascript")
     },
+    plugins:[
+        new HtmlWebpackPlugin({
+            template:"./src/index.html"
+        })
+    ],
     module:{
         rules:[
             {
