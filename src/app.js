@@ -47,7 +47,6 @@ nextBtn.addEventListener('click',()=>{
     }
     showPannel(ques,ans,current_ques,totalQues,output);
 })
-
 submitBtn.addEventListener('click',()=>{
     document.getElementById('test').style.display="none";
     document.getElementById('submit-section').style.display="block";

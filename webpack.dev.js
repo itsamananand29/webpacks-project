@@ -4,7 +4,7 @@ const common= require('./webpack.common.js');
 module.exports=merge(common,{
     mode:"development",
     output:{
-        filename:"app.js",
+        filename:"app.[contenthash].js",
         path:path.resolve(__dirname,"javascript")
     }
 });
