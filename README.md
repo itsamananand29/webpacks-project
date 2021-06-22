@@ -35,3 +35,11 @@ This index.html file will not have our html content .To add it we will have to m
 
 We can seperate the dev and production environment and the merge them usig webpack-merge. 
 We create a common config files , a dev config file and a production config file and add configurations accrodingy.
+
+html-loader:
+any time it find an image in template it is required (ie. require('image.png');)
+
+We need to give a path and a rule for the images files to be handled 
+
+When do the cache busting the problem is that each time anything is changed inside the code a new file is created . But the 
+old file is not deleted . To clear the old files we use clean-webpack-plugin. 
