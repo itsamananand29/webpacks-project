@@ -29,6 +29,7 @@ but we cannot guess the contentHash value and hence to include that file in our 
 we will use plugin HtmlWebpackPlugin in webpack-config so this will an empty html template with the js files included
 along with hashed value added in the filename.The template name by default will be index.html
 
-This index.html file will not have our html content .To add it we will have to mention it as a template inside the 
-plugin
+This index.html file will not have our html content .To add it we will have to mention it as a template inside the plugin new HtmlWebPackPlugin({
+    template: "./src/index.html"
+})
 
