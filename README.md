@@ -33,3 +33,5 @@ This index.html file will not have our html content .To add it we will have to m
     template: "./src/index.html"
 })
 
+We can seperate the dev and production environment and the merge them usig webpack-merge. 
+We create a common config files , a dev config file and a production config file and add configurations accrodingy.
