@@ -15,15 +15,6 @@ module.exports={
     module:{
         rules:[
             {
-                test:/\.scss$/,
-                use:
-                [
-                    "style-loader",  //inject js in dom   
-                    "css-loader",   //2.convert css to js
-                    "sass-loader"  //1.convert scss to css
-                ]
-            },
-            {
                 test: /\.(jpe?g|png|gif)$/,
                 type: 'asset/resource',
                 generator: {
