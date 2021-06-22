@@ -17,6 +17,20 @@ module.exports={
                     "sass-loader"  //1.convert scss to css
                 ]
             },
+            {
+                test: /\.(jpe?g|png|gif)$/,
+                type: 'asset/resource',
+                generator: {
+                  filename: 'images/[name].[hash].[ext]'
+                }
+            },
+            {
+                test:/\.(html)$/,
+                use:[
+                    "html-loader"
+                ]
+            },
+            
         ],
     }
 }
