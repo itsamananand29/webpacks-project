@@ -1,7 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 module.exports={
-    entry:"./src/app.js",
+    entry:{
+        main:"./src/app.js",
+        vendor:"./src/vendor.js"
+    },
     plugins:[
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
