@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js" 
   },
   "keywords": [],
   "author": "",
@@ -16,7 +17,8 @@
     "sass-loader": "^12.1.0",
     "style-loader": "^2.0.0",
     "webpack": "^5.39.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
     "bootstrap": "^5.0.1"
